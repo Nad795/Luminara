@@ -17,6 +17,7 @@ public class InteractRay : MonoBehaviour
 
         if (currentTarget != null && Input.GetKeyDown(KeyCode.E))
         {
+            Debug.Log("[INTERACT] E pressed → calling Interact() on " + currentTarget);
             currentTarget.Interact();
         }
     }
@@ -28,12 +29,19 @@ public class InteractRay : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, interactDistance, interactLayer))
         {
+            Debug.Log("Raycast hit: " + hit.collider.name);
             currentTarget = hit.collider.GetComponent<IInteractable>();
+
+            if (currentTarget != null)
+            Debug.Log("[INTERACT] Target IS interactable");
+            else
+            Debug.Log("[INTERACT] Target NOT interactable");
 
             if (interactUI) interactUI.SetActive(true);
         }
         else
         {
+            Debug.Log("[INTERACT] Ray hit NOTHING");
             currentTarget = null;
             if (interactUI) interactUI.SetActive(false);
         }

@@ -40,26 +40,31 @@ public class Spirit : MonoBehaviour, IInteractable
     void CheckReveal()
     {
         float dist = Vector3.Distance(player.position, transform.position);
-
+        Debug.Log($"[SPIRIT] Distance: {dist}");
         if (dist < revealDistance)
         {
+            Debug.Log("[SPIRIT] REVEALED!");
             currentState = SpiritState.Revealed;
 
             if (visualObject != null)
             {
                 visualObject.SetActive(true);
             }
-
-            Debug.Log("The spirit has been revealed!");
         }
+        Debug.Log($"[SPIRIT] Current State: {currentState}");
     }
 
     public void Interact()
     {
+        Debug.Log("[SPIRIT] Interact() called");
         if (currentState == SpiritState.Revealed)
         {
             currentState = SpiritState.Following;
             Debug.Log("Spirit is now following the player");
+        }
+        else 
+        {
+            Debug.Log("[SPIRIT] Interact failed. CurrentState = " + currentState);
         }
     }
 
