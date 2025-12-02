@@ -18,6 +18,8 @@ public class Spirit : MonoBehaviour, IInteractable
         {
             visualObject.SetActive(false);
         }
+
+        player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     void Update()
@@ -41,7 +43,7 @@ public class Spirit : MonoBehaviour, IInteractable
     {
         float dist = Vector3.Distance(player.position, transform.position);
         Debug.Log($"[SPIRIT] Distance: {dist}");
-        if (dist < revealDistance)
+        if (dist < revealDistance && currentState == SpiritState.Hidden)
         {
             Debug.Log("[SPIRIT] REVEALED!");
             currentState = SpiritState.Revealed;
