@@ -49,7 +49,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -68,7 +68,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Spirit
   currentState: 0
-  player: {fileID: 0}
+  player: {fileID: 1438988491726015088, guid: edcddc2b106763745ba524fd5e9e2eff, type: 3}
   revealDistance: 4
   followSpeed: 3
   visualObject: {fileID: 4463096764707617615}
