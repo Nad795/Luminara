@@ -497,7 +497,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 64657951}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1724584716}
+        m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &64657951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -713,13 +725,13 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
+  m_enableVertexGradient: 1
   m_colorMode: 3
   m_fontColorGradient:
     topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 0.009433806, g: 0.883923, b: 1, a: 1}
+    bottomLeft: {r: 0, g: 1, b: 0.8928158, a: 1}
+    bottomRight: {r: 0, g: 0.9337034, b: 1, a: 1}
   m_fontColorGradientPreset: {fileID: 0}
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
@@ -2543,7 +2555,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 481222007}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1724584716}
+        m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
+        m_MethodName: PlayGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &481222007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13705,6 +13729,7 @@ GameObject:
   - component: {fileID: 1724584715}
   - component: {fileID: 1724584714}
   - component: {fileID: 1724584713}
+  - component: {fileID: 1724584716}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -13798,6 +13823,18 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1724584716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724584711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cab378784dd7ec144b818b6a765501bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SceneController
 --- !u!1 &1738679793 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -606754200593594932, guid: 50fbe9a0397afff4f8c1f7e4b5ae9399, type: 3}
