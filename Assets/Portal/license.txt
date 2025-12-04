@@ -1,0 +1,11 @@
+Model Information:
+* title:	Ancient Portal
+* source:	https://sketchfab.com/3d-models/ancient-portal-c8fd3c64c13e446d8acba7126fb29862
+* author:	ebblender (https://sketchfab.com/ebblender)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Ancient Portal" (https://sketchfab.com/3d-models/ancient-portal-c8fd3c64c13e446d8acba7126fb29862) by ebblender (https://sketchfab.com/ebblender) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
