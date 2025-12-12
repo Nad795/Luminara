@@ -13238,9 +13238,9 @@ Transform:
   m_GameObject: {fileID: 1745307286}
   serializedVersion: 2
   m_LocalRotation: {x: 0.588727, y: -0.39166376, z: -0.39166376, w: 0.588727}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6666667, y: 0.6666667, z: 0.6666667}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: -2.34, y: 0.8, z: -1.21}
+  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1157173061}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -15030,6 +15030,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4387360364338016431, guid: edcddc2b106763745ba524fd5e9e2eff, type: 3}
       propertyPath: camera
+      value: 
+      objectReference: {fileID: 2344117699859696950}
+    - target: {fileID: 4387360364338016431, guid: edcddc2b106763745ba524fd5e9e2eff, type: 3}
+      propertyPath: cameraPlayer
       value: 
       objectReference: {fileID: 2344117699859696950}
     - target: {fileID: 4395808993593741513, guid: edcddc2b106763745ba524fd5e9e2eff, type: 3}

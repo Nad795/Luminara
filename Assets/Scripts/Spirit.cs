@@ -3,22 +3,16 @@ using UnityEngine;
 
 public class Spirit : MonoBehaviour, IInteractable
 {
-    public enum SpiritState { Hidden, Revealed, Following, Purified }
-    public SpiritState currentState = SpiritState.Hidden;
+    public enum SpiritState {Revealed, Following, Purified }
+    public SpiritState currentState = SpiritState.Revealed;
 
     public Transform player;
-    public float revealDistance = 4f;
     public float followSpeed = 3f;
 
     public GameObject visualObject;
 
     void Start()
     {
-        if (visualObject != null)
-        {
-            visualObject.SetActive(false);
-        }
-
         player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
@@ -26,10 +20,6 @@ public class Spirit : MonoBehaviour, IInteractable
     {
         switch (currentState)
         {
-            case SpiritState.Hidden:
-                CheckReveal();
-                break;
-
             case SpiritState.Revealed:
                 break;
 
@@ -37,23 +27,6 @@ public class Spirit : MonoBehaviour, IInteractable
                 FollowPlayer();
                 break;
         }
-    }
-
-    void CheckReveal()
-    {
-        float dist = Vector3.Distance(player.position, transform.position);
-        Debug.Log($"[SPIRIT] Distance: {dist}");
-        if (dist < revealDistance && currentState == SpiritState.Hidden)
-        {
-            Debug.Log("[SPIRIT] REVEALED!");
-            currentState = SpiritState.Revealed;
-
-            if (visualObject != null)
-            {
-                visualObject.SetActive(true);
-            }
-        }
-        Debug.Log($"[SPIRIT] Current State: {currentState}");
     }
 
     public void Interact()
@@ -74,25 +47,5 @@ public class Spirit : MonoBehaviour, IInteractable
     {
         Vector3 targetPos = player.position + (player.forward * -1.5f);
         transform.position = Vector3.MoveTowards(transform.position, targetPos, followSpeed * Time.deltaTime);
-    }
-
-    public void FlashReveal(float duration)
-    {
-        if (visualObject != null)
-        {
-            StartCoroutine(FlashRoutine(duration));
-        }
-    }
-
-    IEnumerator FlashRoutine(float duration)
-    {
-        visualObject.SetActive(true);
-
-        yield return new WaitForSeconds(duration);
-
-        if (currentState != SpiritState.Following)
-        {
-            visualObject.SetActive(false);
-        }
     }
 }
