@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 99381ef96ad829348b60e673d96ff873
+guid: fdb6813e7b5f1fe49932dad28ad2bc96
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -30,15 +30,28 @@ ScriptedImporter:
     assetPath: Assets\Portal\scene.bin
   - type: 1
     originalUri: Assets\Portal\textures\material_0_baseColor.jpeg
-    assetPath: Assets\Portal\textures\material_0_baseColor.jpeg
+    assetPath: 
   - type: 1
     originalUri: Assets\Portal\textures\material_0_metallicRoughness.png
-    assetPath: Assets\Portal\textures\material_0_metallicRoughness.png
+    assetPath: 
   - type: 1
     originalUri: Assets\Portal\textures\material_0_normal.jpeg
-    assetPath: Assets\Portal\textures\material_0_normal.jpeg
+    assetPath: 
   reportItems:
   - type: 0
-    code: 52
+    code: 43
+    messages:
+    - Couldn't load texture at Assets\Portal\textures\material_0_baseColor.jpeg
+    - 0
+  - type: 0
+    code: 45
+    messages:
+    - 0
+  - type: 0
+    code: 45
+    messages:
+    - 1
+  - type: 0
+    code: 45
     messages:
     - 2
