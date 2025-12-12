@@ -31,15 +31,8 @@ public class PulseReveal : MonoBehaviour
             {
                 spirit.FlashReveal(revealDuration);
             }
-
-            yield return new WaitForSeconds(0.3f);
-            isPulsing = false;
         }
-
-        void OnDrawGizmosSelected()
-        {
-            Gizmos.color = Color.cyan;
-            Gizmos.DrawWireSphere(transform.position, pulseRadius);
-        }
+        yield return new WaitForSeconds(0.3f);
+        isPulsing = false;
     }
 }

@@ -2147,7 +2147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f787844d0eb2e7458affee86d1ed28c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectiveManager
-  totalSpirits: 1
+  totalSpirits: 5
   purifiedCount: 0
   portal: {fileID: 1868208214}
 --- !u!4 &410211773
@@ -2193,11 +2193,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SpiritSpawner
   spirit: {fileID: 2994321473990072345, guid: 40767aa32141a0446addf5a5adb119e0, type: 3}
   numberOfSpirits: 5
-  minX: 100
-  maxX: 300
-  minZ: 150
+  minX: 110
+  maxX: 238
+  minZ: 290
   maxZ: 450
-  yPosition: 6
+  yPosition: 10
   checkRadius: 1
   obstacleLayer:
     serializedVersion: 2
@@ -15024,6 +15024,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fairy
       objectReference: {fileID: 0}
+    - target: {fileID: 2591860391132627571, guid: edcddc2b106763745ba524fd5e9e2eff, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4387360364338016431, guid: edcddc2b106763745ba524fd5e9e2eff, type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 2344117699859696950}
     - target: {fileID: 4395808993593741513, guid: edcddc2b106763745ba524fd5e9e2eff, type: 3}
       propertyPath: m_Mass
       value: 1

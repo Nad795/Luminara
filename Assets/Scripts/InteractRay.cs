@@ -5,6 +5,7 @@ public class InteractRay : MonoBehaviour
     [Header("Raycast Settings")]
     public float interactDistance = 3f;
     public LayerMask interactLayer;
+    public Camera camera;
 
     [Header("UI Prompt")]
     public GameObject interactUI;
@@ -24,7 +25,7 @@ public class InteractRay : MonoBehaviour
 
     void CheckForInteractable()
     {
-        Ray ray = new Ray(transform.position, transform.forward);
+        Ray ray = new Ray(camera.transform.position, camera.transform.forward);
         RaycastHit hit;
 
         if (Physics.Raycast(ray, out hit, interactDistance, interactLayer))
